@@ -1,0 +1,33 @@
+Domain 
+	Livro
+		ID
+		Guid
+		Titulo
+		Subtitulo
+		Editora
+		Autor
+		Volume
+		Edição
+		Ano Edição
+		Ativo
+	
+	Leitor
+		ID
+		Guid
+		Nome
+		CPF
+		Data Nascimento
+		
+	emprestimo
+		ID
+		guid
+		Id Livro
+		qualidade e/ou estado lirvo
+		data do emprestimo
+		data prevista de devolução
+		data de devolução
+		feedbacks devolução
+		
+		
+	
+		
