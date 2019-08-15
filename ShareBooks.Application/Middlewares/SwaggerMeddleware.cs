@@ -5,12 +5,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace ShareBooks.Application.Extensions
+
+namespace ShareBooks.Application.Middlewares
 {
     [ExcludeFromCodeCoverage]
-    public static class SwaggerExtensions
+    public static class SwaggerMeddleware
     {
-        public static void SwaggerServices( this IServiceCollection services )
+        public static void AddSwaggerMiddleware( this IServiceCollection services )
         {
             services.AddSwaggerGen( c =>
             {
@@ -31,7 +32,7 @@ namespace ShareBooks.Application.Extensions
             } );
         }
 
-        public static void SwaggerApplication( this IApplicationBuilder app )
+        public static void UseSwaggerMiddleware( this IApplicationBuilder app )
         {
             app.UseSwagger( );
             app.UseSwaggerUI( c =>
