@@ -11,6 +11,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="coverage_reports\**" />
+    <EmbeddedResource Remove="coverage_reports\**" />
+    <None Remove="coverage_reports\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="coverage.opencover.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="coverlet.msbuild" Version="2.6.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -26,6 +36,10 @@
   <ItemGroup>
     <ProjectReference Include="..\ShareBooks.Application\ShareBooks.Application.csproj" />
     <ProjectReference Include="..\ShareBooks.Services\ShareBooks.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UnitTests\" />
   </ItemGroup>
 
 </Project>
