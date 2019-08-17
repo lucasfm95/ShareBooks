@@ -6,3 +6,4 @@ Projeto utilizando:
 * Log Serilog;
 * Auto Mapper;
 * SQL Server;
+* Coverlet;
