@@ -10,6 +10,19 @@
             </summary>
             <returns>Lista de livros</returns>
         </member>
+        <member name="M:ShareBooks.Application.Controllers.BookController.GetByKeyId(System.Guid)">
+            <summary>
+            Busca um livro
+            </summary>
+            <param name="keyId">Identificador único do livro</param>
+            <returns>Livro</returns>
+        </member>
+        <member name="M:ShareBooks.Application.Controllers.BookController.Post(ShareBooks.Application.ViewModels.BookViewModel)">
+            <summary>
+            Adiciona um livro
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:ShareBooks.Application.Middlewares.DependencyInjectionMiddleware">
             <summary>
             Classe de injeção de dependência no container DI

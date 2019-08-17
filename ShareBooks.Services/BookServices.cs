@@ -20,9 +20,14 @@ namespace ShareBooks.Services
             return _bookBusiness.ListAll( );
         }
 
+        public BookEntity GetByKeyId( Guid keyId )
+        {
+            return _bookBusiness.GetByKeyId( keyId );
+        }
+
         public BookEntity Insert( BookEntity book )
         {
-            throw new NotImplementedException( );
+            return _bookBusiness.Insert( book );
         }
 
         public BookEntity Update( BookEntity book )

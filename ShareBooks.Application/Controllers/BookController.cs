@@ -57,5 +57,66 @@ namespace ShareBooks.Application.Controllers
 
             return result;
         }
+
+        /// <summary>
+        /// Busca um livro
+        /// </summary>
+        /// <param name="keyId">Identificador único do livro</param>
+        /// <returns>Livro</returns>
+        [HttpGet( "{keyId}" )]
+        [ProducesResponseType( typeof( BookViewModel ), ( int )HttpStatusCode.OK )]
+        public async Task<IActionResult> GetByKeyId( [FromRoute] Guid keyId )
+        {
+            IActionResult result = null;
+            try
+            {
+                BookEntity bookEntity = _bookServices.GetByKeyId( keyId );
+                BookViewModel bookViewModel = _mapper.Map<BookViewModel>( bookEntity );
+                if ( bookViewModel != null )
+                {
+                    result = Ok( bookViewModel );
+                }
+                else
+                {
+                    result = NoContent( );
+                }
+            }
+            catch ( Exception ex)
+            {
+                _logger.LogError( ex, ex.Message );
+                result = new StatusCodeResult( 500 );
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Adiciona um livro
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> Post( [FromBody] BookViewModel bookViewModel )
+        {
+            IActionResult result;
+            try
+            {
+                BookEntity book = _mapper.Map<BookEntity>( bookViewModel );
+                if ( _bookServices.Insert( book ) != null )
+                {
+                    result = Ok( );
+                }
+                else
+                {
+                    result = new StatusCodeResult( 500 );
+                }
+            }
+            catch ( Exception ex )
+            {
+                _logger.LogError( ex, ex.Message );
+                result = new StatusCodeResult( 500 );
+            }
+
+            return result;
+        }
     }
 }

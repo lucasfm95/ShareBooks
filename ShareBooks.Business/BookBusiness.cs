@@ -15,22 +15,21 @@ namespace ShareBooks.Business
             _repository = repository; 
         }
 
+        public BookEntity GetByKeyId( Guid keyId )
+        {
+            //return _repository.FindById( 1 );
+            return _repository.FindByKeyId( keyId );
+        }
+
         public BookEntity Insert( BookEntity book )
         {
-            throw new NotImplementedException( );
+            book.KeyId = Guid.NewGuid( );
+            return _repository.Insert( book );
         }
 
         public List<BookEntity> ListAll( )
         {
-            //return _repository.FindAll( );
-
-            return new List<BookEntity>( )
-            {
-                new BookEntity( )
-                {
-                    Title = "teste Lucas"
-                }
-            };
+            return _repository.FindAll( );
         }
 
         public BookEntity Update( BookEntity book )

@@ -1,10 +1,12 @@
 ﻿using ShareBooks.Domain.Entities.Abstract;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace ShareBooks.Domain.Entities
 {
+    [Table( "Book" )]
     public sealed class BookEntity : Entity
     {
         public string Title { get; set; }

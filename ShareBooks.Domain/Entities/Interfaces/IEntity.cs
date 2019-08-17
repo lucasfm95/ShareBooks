@@ -6,7 +6,7 @@ namespace ShareBooks.Domain.Entities.Interfaces
 {
     public interface IEntity
     {
-        long Id { get; set; }
-        Guid Key { get; }
+        int Id { get; set; }
+        Guid KeyId { get; }
     }
 }

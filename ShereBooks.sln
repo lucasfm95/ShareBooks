@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareBooks.Services", "Shar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareBooks.Application", "ShareBooks.Application\ShareBooks.Application.csproj", "{BD73F888-460E-49C8-8419-0F975C42D7F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareBooks.Tests", "ShareBooks.Tests\ShareBooks.Tests.csproj", "{747BDCCA-FCFD-4A4A-80B3-800FCD7C393A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareBooks.Tests", "ShareBooks.Tests\ShareBooks.Tests.csproj", "{747BDCCA-FCFD-4A4A-80B3-800FCD7C393A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7C2766E2-D0B5-4647-B3C5-B40C28CCCDEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DF788350-6765-4C6A-AECF-EF1121FEAACB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2C9A01F-60E0-4E93-9CB4-755303C3969E} = {7C2766E2-D0B5-4647-B3C5-B40C28CCCDEE}
+		{BA727DFF-6BC0-4688-8FAA-0CE7839A806B} = {7C2766E2-D0B5-4647-B3C5-B40C28CCCDEE}
+		{80A93BC0-F362-4521-BB54-280A773563D6} = {7C2766E2-D0B5-4647-B3C5-B40C28CCCDEE}
+		{499884B5-8AE6-4FF3-92B8-A0EF42414258} = {7C2766E2-D0B5-4647-B3C5-B40C28CCCDEE}
+		{BD73F888-460E-49C8-8419-0F975C42D7F6} = {7C2766E2-D0B5-4647-B3C5-B40C28CCCDEE}
+		{747BDCCA-FCFD-4A4A-80B3-800FCD7C393A} = {DF788350-6765-4C6A-AECF-EF1121FEAACB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A404F4D-2B4E-46E0-9C0C-D7499200C1EE}

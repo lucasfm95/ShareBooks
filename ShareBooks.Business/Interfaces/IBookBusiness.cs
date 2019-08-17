@@ -8,6 +8,7 @@ namespace ShareBooks.Business.Interfaces
     public interface IBookBusiness
     {
         List<BookEntity> ListAll( );
+        BookEntity GetByKeyId( Guid keyId );
         BookEntity Insert( BookEntity book );
         BookEntity Update( BookEntity book );
     }

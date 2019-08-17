@@ -7,6 +7,7 @@ namespace ShareBooks.Application.ViewModels
 {
     public class BookViewModel
     {
+        public Guid KeyId { get; set; }
         public string Title { get; set; }
         public string SubTitle { get; set; }
         public string Publisher { get; set; }

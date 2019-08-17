@@ -26,6 +26,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="Moq" Version="4.12.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
       <PrivateAssets>all</PrivateAssets>
@@ -35,11 +36,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShareBooks.Application\ShareBooks.Application.csproj" />
-    <ProjectReference Include="..\ShareBooks.Services\ShareBooks.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="UnitTests\" />
+    <ProjectReference Include="..\ShareBooks.Business\ShareBooks.Business.csproj" />
   </ItemGroup>
 
 </Project>
