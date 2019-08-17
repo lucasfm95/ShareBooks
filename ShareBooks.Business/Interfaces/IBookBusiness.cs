@@ -1,15 +1,14 @@
-﻿using ShareBooks.Domain.Entities;
+﻿using ShareBooks.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ShareBooks.Business.Interfaces
 {
     public interface IBookBusiness
     {
-        List<BookEntity> ListAll( );
-        BookEntity GetByKeyId( Guid keyId );
-        BookEntity Insert( BookEntity book );
-        BookEntity Update( BookEntity book );
+        List<BookModel> ListAll( );
+        BookModel GetByKeyId( Guid keyId );
+        BookModel Insert( BookModel book );
+        BookModel Update( BookModel book );
     }
 }

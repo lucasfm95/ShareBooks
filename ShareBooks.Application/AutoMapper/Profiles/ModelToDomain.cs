@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using ShareBooks.Application.ViewModels;
 using ShareBooks.Domain.Entities;
+using ShareBooks.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ShareBooks.Application.AutoMapper.Profiles
 {
-    public class ViewModelToDomain : Profile
+    public class ModelToDomain : Profile
     {
-        public ViewModelToDomain( )
+        public ModelToDomain( )
         {
-            CreateMap<BookViewModel, BookEntity>( );
+            CreateMap<BookModel, BookEntity>( );
         }
     }
 }

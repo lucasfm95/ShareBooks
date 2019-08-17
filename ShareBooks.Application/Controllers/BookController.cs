@@ -1,8 +1,6 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ShareBooks.Application.ViewModels;
-using ShareBooks.Domain.Entities;
+using ShareBooks.Domain.Models;
 using ShareBooks.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -16,12 +14,10 @@ namespace ShareBooks.Application.Controllers
     public class BookController : ControllerBase
     {
         private readonly IBookServices _bookServices;
-        private readonly IMapper _mapper;
         private readonly ILogger<BookController> _logger;
-        public BookController( IBookServices bookServices, IMapper mapper, ILogger<BookController> logger )
+        public BookController( IBookServices bookServices, ILogger<BookController> logger )
         {
             _bookServices = bookServices;
-            _mapper = mapper;
             _logger = logger;
         }
 
@@ -30,19 +26,17 @@ namespace ShareBooks.Application.Controllers
         /// </summary>
         /// <returns>Lista de livros</returns>
         [HttpGet]
-        [ProducesResponseType( typeof( List<BookViewModel> ), ( int )HttpStatusCode.OK )]
+        [ProducesResponseType( typeof( List<BookModel> ), ( int )HttpStatusCode.OK )]
         public async Task<IActionResult> Get( )
         {
             IActionResult result;
             try
             {
-                List<BookEntity> bookEntities = _bookServices.GetAll( );
+                List<BookModel> bookModels = _bookServices.GetAll( );
 
-                List<BookViewModel> bookViewModels = _mapper.Map<List<BookViewModel>>( bookEntities );
-
-                if ( bookViewModels.Count > 0 )
+                if ( bookModels.Count > 0 )
                 {
-                    result = Ok( bookViewModels );
+                    result = Ok( bookModels );
                 }
                 else
                 {
@@ -64,24 +58,23 @@ namespace ShareBooks.Application.Controllers
         /// <param name="keyId">Identificador único do livro</param>
         /// <returns>Livro</returns>
         [HttpGet( "{keyId}" )]
-        [ProducesResponseType( typeof( BookViewModel ), ( int )HttpStatusCode.OK )]
+        [ProducesResponseType( typeof( BookModel ), ( int )HttpStatusCode.OK )]
         public async Task<IActionResult> GetByKeyId( [FromRoute] Guid keyId )
         {
             IActionResult result = null;
             try
             {
-                BookEntity bookEntity = _bookServices.GetByKeyId( keyId );
-                BookViewModel bookViewModel = _mapper.Map<BookViewModel>( bookEntity );
-                if ( bookViewModel != null )
+                BookModel bookModel = _bookServices.GetByKeyId( keyId );
+                if ( bookModel != null )
                 {
-                    result = Ok( bookViewModel );
+                    result = Ok( bookModel );
                 }
                 else
                 {
                     result = NoContent( );
                 }
             }
-            catch ( Exception ex)
+            catch ( Exception ex )
             {
                 _logger.LogError( ex, ex.Message );
                 result = new StatusCodeResult( 500 );
@@ -93,15 +86,43 @@ namespace ShareBooks.Application.Controllers
         /// <summary>
         /// Adiciona um livro
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Ok Result</returns>
         [HttpPost]
-        public async Task<IActionResult> Post( [FromBody] BookViewModel bookViewModel )
+        public async Task<IActionResult> Post( [FromBody] BookModel bookModel )
         {
             IActionResult result;
             try
             {
-                BookEntity book = _mapper.Map<BookEntity>( bookViewModel );
-                if ( _bookServices.Insert( book ) != null )
+                if ( _bookServices.Insert( bookModel ) != null )
+                {
+                    result = Ok( );
+                }
+                else
+                {
+                    result = new StatusCodeResult( 500 );
+                }
+            }
+            catch ( Exception ex )
+            {
+                _logger.LogError( ex, ex.Message );
+                result = new StatusCodeResult( 500 );
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Alterar um livro
+        /// </summary>
+        /// <param name="bookModel"></param>
+        /// <returns>Ok Result</returns>
+        [HttpPut]
+        public async Task<IActionResult> Put( [FromBody] BookModel bookModel )
+        {
+            IActionResult result;
+            try
+            {
+                if ( _bookServices.Update( bookModel ) != null )
                 {
                     result = Ok( );
                 }

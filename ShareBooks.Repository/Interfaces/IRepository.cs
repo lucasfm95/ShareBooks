@@ -14,6 +14,5 @@ namespace ShareBooks.Repository.Interfaces
         List<T> ExecuteQuery( string query, DynamicParameters parameters = null );
         T Insert( T obj );
         T Update( T obj );
-        
     }
 }

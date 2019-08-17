@@ -17,11 +17,18 @@
             <param name="keyId">Identificador único do livro</param>
             <returns>Livro</returns>
         </member>
-        <member name="M:ShareBooks.Application.Controllers.BookController.Post(ShareBooks.Application.ViewModels.BookViewModel)">
+        <member name="M:ShareBooks.Application.Controllers.BookController.Post(ShareBooks.Domain.Models.BookModel)">
             <summary>
             Adiciona um livro
             </summary>
-            <returns></returns>
+            <returns>Ok Result</returns>
+        </member>
+        <member name="M:ShareBooks.Application.Controllers.BookController.Put(ShareBooks.Domain.Models.BookModel)">
+            <summary>
+            Alterar um livro
+            </summary>
+            <param name="bookModel"></param>
+            <returns>Ok Result</returns>
         </member>
         <member name="T:ShareBooks.Application.Middlewares.DependencyInjectionMiddleware">
             <summary>

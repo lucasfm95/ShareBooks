@@ -1,40 +1,76 @@
-﻿using ShareBooks.Business.Interfaces;
+﻿using AutoMapper;
+using ShareBooks.Business.Interfaces;
 using ShareBooks.Domain.Entities;
+using ShareBooks.Domain.Models;
 using ShareBooks.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ShareBooks.Business
 {
+    /// <summary>
+    /// Camada business do book
+    /// </summary>
     public class BookBusiness : IBookBusiness
     {
         private readonly IRepository<BookEntity> _repository;
-        public BookBusiness( IRepository<BookEntity> repository )
+        private readonly IMapper _mapper;
+        public BookBusiness( IRepository<BookEntity> repository, IMapper mapper )
         {
-            _repository = repository; 
+            _repository = repository;
+            _mapper = mapper;
         }
 
-        public BookEntity GetByKeyId( Guid keyId )
+        /// <summary>
+        /// Busca um livro chamando o repository e converte para o model
+        /// </summary>
+        /// <param name="keyId">KeyId do livro</param>
+        /// <returns>Livro encontrado</returns>
+        public BookModel GetByKeyId( Guid keyId )
         {
-            //return _repository.FindById( 1 );
-            return _repository.FindByKeyId( keyId );
+            BookEntity bookEntity = _repository.FindByKeyId( keyId );
+            return _mapper.Map<BookModel>( bookEntity );
         }
 
-        public BookEntity Insert( BookEntity book )
+        /// <summary>
+        /// Converte o model na entidade e chama o repository para inserir
+        /// </summary>
+        /// <param name="book">Livro que será inserido</param>
+        /// <returns>Livro inserido</returns>
+        public BookModel Insert( BookModel book )
         {
-            book.KeyId = Guid.NewGuid( );
-            return _repository.Insert( book );
+            BookEntity bookEntity = _mapper.Map<BookEntity>( book );
+            bookEntity.KeyId = Guid.NewGuid( );
+
+            bookEntity = _repository.Insert( bookEntity );
+
+            return _mapper.Map<BookModel>( bookEntity );
         }
 
-        public List<BookEntity> ListAll( )
+        /// <summary>
+        /// Busca todos livros e converte lista entidade em model 
+        /// </summary>
+        /// <returns>Lista de livros</returns>
+        public List<BookModel> ListAll( )
         {
-            return _repository.FindAll( );
+            List<BookEntity> bookEntities = _repository.FindAll( );
+
+            return _mapper.Map<List<BookModel>>( bookEntities );
         }
 
-        public BookEntity Update( BookEntity book )
+        /// <summary>
+        /// Converte o model em entidade e chama o repository para alterar
+        /// </summary>
+        /// <param name="book">Livro que será alterado</param>
+        /// <returns>Livro Alterado</returns>
+        public BookModel Update( BookModel book )
         {
-            throw new NotImplementedException( );
+            BookEntity bookEntity = _mapper.Map<BookEntity>( book );
+            bookEntity.Id = _repository.FindByKeyId( bookEntity.KeyId ).Id;
+
+            bookEntity = _repository.Update( bookEntity );
+
+            return _mapper.Map<BookModel>( bookEntity );
         }
     }
 }

@@ -1,12 +1,14 @@
 ﻿using ShareBooks.Business.Interfaces;
-using ShareBooks.Domain.Entities;
+using ShareBooks.Domain.Models;
 using ShareBooks.Services.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ShareBooks.Services
 {
+    /// <summary>
+    /// Camada service do book
+    /// </summary>
     public class BookServices : IBookServices
     {
         private readonly IBookBusiness _bookBusiness;
@@ -15,24 +17,43 @@ namespace ShareBooks.Services
             _bookBusiness = bookBusiness;
         }
 
-        public List<BookEntity> GetAll( )
+        /// <summary>
+        /// Busca todos os livros chamando a camada business
+        /// </summary>
+        /// <returns>Lista de livros</returns>
+        public List<BookModel> GetAll( )
         {
             return _bookBusiness.ListAll( );
         }
 
-        public BookEntity GetByKeyId( Guid keyId )
+        /// <summary>
+        /// Busca um livro pelo guid chamando a camada business
+        /// </summary>
+        /// <param name="keyId">KeyId do livro</param>
+        /// <returns>Livro encontrado</returns>
+        public BookModel GetByKeyId( Guid keyId )
         {
             return _bookBusiness.GetByKeyId( keyId );
         }
 
-        public BookEntity Insert( BookEntity book )
+        /// <summary>
+        /// Inseri um livro chamando a camada de business 
+        /// </summary>
+        /// <param name="book">Livro que será inserido</param>
+        /// <returns>Livro inserido</returns>
+        public BookModel Insert( BookModel book )
         {
             return _bookBusiness.Insert( book );
         }
 
-        public BookEntity Update( BookEntity book )
+        /// <summary>
+        /// Alterar um livro chamando a camada de business
+        /// </summary>
+        /// <param name="book">Livro que será alterado</param>
+        /// <returns>Livro alterado</returns>
+        public BookModel Update( BookModel book )
         {
-            throw new NotImplementedException( );
+            return _bookBusiness.Update( book );
         }
     }
 }

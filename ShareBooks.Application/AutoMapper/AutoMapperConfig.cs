@@ -15,8 +15,8 @@ namespace ShareBooks.Application.AutoMapper
         {
             return new MapperConfiguration( ps =>
             {
-                ps.AddProfile( new DomainToViewModel( ) );
-                ps.AddProfile( new ViewModelToDomain( ) );
+                ps.AddProfile( new DomainToModel( ) );
+                ps.AddProfile( new ModelToDomain( ) );
             } );
         }
     }
