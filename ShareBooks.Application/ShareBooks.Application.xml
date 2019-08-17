@@ -4,5 +4,22 @@
         <name>ShareBooks.Application</name>
     </assembly>
     <members>
+        <member name="M:ShareBooks.Application.Controllers.BookController.Get">
+            <summary>
+            Lista todos os livros
+            </summary>
+            <returns>Lista de livros</returns>
+        </member>
+        <member name="T:ShareBooks.Application.Middlewares.DependencyInjectionMiddleware">
+            <summary>
+            Classe de injeção de dependência no container DI
+            </summary>
+        </member>
+        <member name="M:ShareBooks.Application.Middlewares.DependencyInjectionMiddleware.AddDependencyInjection(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adiciona todas as dependências do projeto no container de DI
+            </summary>
+            <param name="services">Container Services</param>
+        </member>
     </members>
 </doc>

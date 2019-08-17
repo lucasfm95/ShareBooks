@@ -1,11 +1,11 @@
-﻿using ShareBooks.Domain.Entities.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace ShareBooks.Domain.Entities
+namespace ShareBooks.Application.ViewModels
 {
-    public sealed class BookEntity : Entity
+    public class BookViewModel
     {
         public string Title { get; set; }
         public string SubTitle { get; set; }

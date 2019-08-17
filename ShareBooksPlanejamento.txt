@@ -1,5 +1,5 @@
 Domain 
-	Livro
+	Book
 		ID
 		Guid
 		Titulo
@@ -11,7 +11,7 @@ Domain
 		Ano Edição
 		Ativo
 	
-	Leitor
+	Reader
 		ID
 		Guid
 		Nome
