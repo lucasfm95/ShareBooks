@@ -30,6 +30,33 @@
             <param name="bookModel"></param>
             <returns>Ok Result</returns>
         </member>
+        <member name="M:ShareBooks.Application.Controllers.ReaderController.Get">
+            <summary>
+            Lista todos os leitores
+            </summary>
+            <returns>Lista de leitores</returns>
+        </member>
+        <member name="M:ShareBooks.Application.Controllers.ReaderController.GetByKeyId(System.Guid)">
+            <summary>
+            Busca um leitor
+            </summary>
+            <param name="keyId">Identificador único do leitor</param>
+            <returns>Leitor</returns>
+        </member>
+        <member name="M:ShareBooks.Application.Controllers.ReaderController.Post(ShareBooks.Domain.Models.ReaderModel)">
+            <summary>
+            Adiciona um leitor
+            </summary>
+            <param name="readerModel">Leitor que será inserido</param>
+            <returns>Ok Result</returns>
+        </member>
+        <member name="M:ShareBooks.Application.Controllers.ReaderController.Put(ShareBooks.Domain.Models.ReaderModel)">
+            <summary>
+            Alterar um leitor
+            </summary>
+            <param name="readerModel">Leitor para ser alterado</param>
+            <returns>Ok Result</returns>
+        </member>
         <member name="T:ShareBooks.Application.Middlewares.DependencyInjectionMiddleware">
             <summary>
             Classe de injeção de dependência no container DI

@@ -4,27 +4,26 @@ using Microsoft.Extensions.Logging;
 using ShareBooks.Domain.Entities;
 using ShareBooks.Repository.Abstract;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace ShareBooks.Repository
 {
-    /// <summary>
-    /// Implementação do repository do book
-    /// </summary>
-    public class BookRepository : Repository<BookEntity>
+    public class ReaderRepository : Repository<ReaderEntity>
     {
-        public BookRepository( ILogger<Repository<BookEntity>> logger, IConfiguration configuration ) : base( logger, configuration )
+        public ReaderRepository( ILogger<Repository<ReaderEntity>> logger, IConfiguration configuration ) : base( logger, configuration )
         {
         }
 
         /// <summary>
-        /// Busca um livro pelo keyId 
+        /// Busca leitor pelo keyId
         /// </summary>
         /// <param name="keyId">KeyId</param>
-        /// <returns>Livro encontrado</returns>
-        public override BookEntity FindByKeyId( Guid keyId )
+        /// <returns>Leitor encontrado</returns>
+        public override ReaderEntity FindByKeyId( Guid keyId )
         {
-            string sqlQuery = "select id, keyid, title, subtitle, publisher, author, edition, yearedition, active from book where keyid = @KeyId";
+            string sqlQuery = "select id, keyid, name, identitydocument, email from reader where keyid = @KeyId";
 
             DynamicParameters parameters = new DynamicParameters( );
             parameters.Add( "@KeyId", keyId );
