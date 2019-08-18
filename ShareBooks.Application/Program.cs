@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Serilog;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ShareBooks.Application
 {
+    [ExcludeFromCodeCoverage]
     public class Program
     {
         public static void Main( string[] args )
@@ -19,6 +15,7 @@ namespace ShareBooks.Application
 
         public static IWebHostBuilder CreateWebHostBuilder( string[] args ) =>
             WebHost.CreateDefaultBuilder( args )
+                .UseSerilog( )
                 .UseStartup<Startup>( );
     }
 }
