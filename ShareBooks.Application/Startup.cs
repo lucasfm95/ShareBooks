@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ShareBooks.Application.Middlewares;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ShareBooks.Application
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup( IConfiguration configuration )

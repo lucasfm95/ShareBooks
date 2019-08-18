@@ -8,16 +8,14 @@ using ShareBooks.Repository;
 using ShareBooks.Repository.Interfaces;
 using ShareBooks.Services;
 using ShareBooks.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ShareBooks.Application.Middlewares
 {
     /// <summary>
     /// Classe de injeção de dependência no container DI
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public static class DependencyInjectionMiddleware
     {
         /// <summary>
