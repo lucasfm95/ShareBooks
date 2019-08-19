@@ -1,12 +1,12 @@
-﻿using System;
+﻿using ShareBooks.Domain.Models.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ShareBooks.Domain.Models
 {
-    public class BookModel
+    public class BookModel : Model
     {
-        public Guid KeyId { get; set; }
         public string Title { get; set; }
         public string SubTitle { get; set; }
         public string Publisher { get; set; }

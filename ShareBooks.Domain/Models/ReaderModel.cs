@@ -1,13 +1,11 @@
-﻿using ShareBooks.Domain.Entities.Abstract;
+﻿using ShareBooks.Domain.Models.Abstract;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace ShareBooks.Domain.Entities
+namespace ShareBooks.Domain.Models
 {
-    [Table( "Reader" )]
-    public sealed class ReaderEntity : Entity
+    public class ReaderModel : Model
     {
         public string Name { get; set; }
         public string IdentityDocument { get; set; }

@@ -31,18 +31,21 @@ namespace ShareBooks.Application.Middlewares
             #region Repositories
 
             services.AddSingleton<IRepository<BookEntity>, BookRepository>( );
+            services.AddSingleton<IRepository<ReaderEntity>, ReaderRepository>( );
 
             #endregion
 
             #region Business
 
             services.AddTransient<IBookBusiness, BookBusiness>( );
+            services.AddTransient<IReaderBusiness, ReaderBusiness>( );
 
             #endregion
 
             #region Services
 
             services.AddTransient<IBookServices, BookServices>( );
+            services.AddTransient<IReaderServices, ReaderServices>( );
 
             #endregion
         }

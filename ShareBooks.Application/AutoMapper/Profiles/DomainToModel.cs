@@ -13,6 +13,7 @@ namespace ShareBooks.Application.AutoMapper.Profiles
         public DomainToModel( )
         {
             CreateMap<BookEntity, BookModel>( );
+            CreateMap<ReaderEntity, ReaderModel>( );
         }
     }
 }
