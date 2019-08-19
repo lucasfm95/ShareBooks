@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="350" visitedSequencePoints="190" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="54.28" branchCoverage="0" maxCyclomaticComplexity="23" minCyclomaticComplexity="10" visitedClasses="17" numClasses="26" visitedMethods="36" numMethods="66" />
+  <Summary numSequencePoints="350" visitedSequencePoints="235" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="67.14" branchCoverage="0" maxCyclomaticComplexity="23" minCyclomaticComplexity="10" visitedClasses="20" numClasses="26" visitedMethods="45" numMethods="66" />
   <Modules>
-    <Module hash="ED9DC14C-E476-43DE-8AEF-EAD362992131">
+    <Module hash="D00CDE1D-D569-4C7D-8974-79C1164E5DD3">
       <ModulePath>ShareBooks.Application.dll</ModulePath>
-      <ModuleTime>2019-08-19T09:28:54</ModuleTime>
+      <ModuleTime>2019-08-19T10:03:29</ModuleTime>
       <ModuleName>ShareBooks.Application</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Application\Controllers\BookController.cs" />
@@ -179,11 +179,11 @@
               <Name>System.Void ShareBooks.Application.Controllers.ReaderController::.ctor(ShareBooks.Services.Interfaces.IReaderServices,Microsoft.Extensions.Logging.ILogger`1&lt;ShareBooks.Application.Controllers.ReaderController&gt;)</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="9" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="9" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="9" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="9" uspid="25" ordinal="3" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="9" uspid="26" ordinal="4" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="12" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="12" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="12" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="12" uspid="25" ordinal="3" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="12" uspid="26" ordinal="4" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="22" ec="1" el="26" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
@@ -293,35 +293,35 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="17" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
           <FullName>ShareBooks.Application.Controllers.ReaderController/&lt;Put&gt;d__6</FullName>
           <Methods>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="17" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void ShareBooks.Application.Controllers.ReaderController/&lt;Put&gt;d__6::MoveNext()</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="126" ordinal="0" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="129" ordinal="1" sl="129" sc="1" el="129" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="130" ordinal="2" sl="130" sc="1" el="130" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="131" ordinal="3" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="132" ordinal="4" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="133" ordinal="5" sl="133" sc="1" el="133" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="135" ordinal="6" sl="135" sc="1" el="135" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="136" ordinal="7" sl="136" sc="1" el="136" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="137" ordinal="8" sl="137" sc="1" el="137" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="138" ordinal="9" sl="138" sc="1" el="138" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="139" ordinal="10" sl="139" sc="1" el="139" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="140" ordinal="11" sl="140" sc="1" el="140" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="141" ordinal="12" sl="141" sc="1" el="141" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="142" ordinal="13" sl="142" sc="1" el="142" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="143" ordinal="14" sl="143" sc="1" el="143" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="145" ordinal="15" sl="145" sc="1" el="145" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="146" ordinal="16" sl="146" sc="1" el="146" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="126" ordinal="0" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="129" ordinal="1" sl="129" sc="1" el="129" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="130" ordinal="2" sl="130" sc="1" el="130" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="131" ordinal="3" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="132" ordinal="4" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="133" ordinal="5" sl="133" sc="1" el="133" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="135" ordinal="6" sl="135" sc="1" el="135" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="136" ordinal="7" sl="136" sc="1" el="136" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="137" ordinal="8" sl="137" sc="1" el="137" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="138" ordinal="9" sl="138" sc="1" el="138" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="139" ordinal="10" sl="139" sc="1" el="139" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="140" ordinal="11" sl="140" sc="1" el="140" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="141" ordinal="12" sl="141" sc="1" el="141" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="142" ordinal="13" sl="142" sc="1" el="142" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="143" ordinal="14" sl="143" sc="1" el="143" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="145" ordinal="15" sl="145" sc="1" el="145" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="146" ordinal="16" sl="146" sc="1" el="146" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="126" ec="1" el="146" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+              <MethodPoint vc="17" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="126" ec="1" el="146" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -335,11 +335,11 @@
               <Name>System.Void ShareBooks.Application.AutoMapper.Profiles.DomainToModel::.ctor()</Name>
               <FileRef uid="3" />
               <SequencePoints>
-                <SequencePoint vc="4" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="4" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="4" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="4" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="4" uspid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="8" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="8" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="8" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="8" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="8" uspid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="17" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
@@ -356,11 +356,11 @@
               <Name>System.Void ShareBooks.Application.AutoMapper.Profiles.ModelToDomain::.ctor()</Name>
               <FileRef uid="4" />
               <SequencePoints>
-                <SequencePoint vc="4" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="4" />
-                <SequencePoint vc="4" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="4" />
-                <SequencePoint vc="4" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="4" />
-                <SequencePoint vc="4" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="4" />
-                <SequencePoint vc="4" uspid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="4" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="17" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
@@ -369,9 +369,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="34F106FD-504C-49D6-BF59-69A0B3808B18">
+    <Module hash="66923E19-C0EA-40D3-89FA-BE186D81A8E5">
       <ModulePath>ShareBooks.Business.dll</ModulePath>
-      <ModuleTime>2019-08-19T09:28:54</ModuleTime>
+      <ModuleTime>2019-08-19T10:03:29</ModuleTime>
       <ModuleName>ShareBooks.Business</ModuleName>
       <Files>
         <File uid="5" fullPath="C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Business\BookBusiness.cs" />
@@ -460,91 +460,91 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="25" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <Summary numSequencePoints="25" visitedSequencePoints="25" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="5" numMethods="5" />
           <FullName>ShareBooks.Business.ReaderBusiness</FullName>
           <Methods>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>ShareBooks.Domain.Models.ReaderModel ShareBooks.Business.ReaderBusiness::GetByKeyId(System.Guid)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="32" ordinal="0" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="33" ordinal="1" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="34" ordinal="2" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="35" ordinal="3" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="32" ordinal="0" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="33" ordinal="1" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="34" ordinal="2" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="35" ordinal="3" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="32" ec="1" el="35" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="32" ec="1" el="35" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>ShareBooks.Domain.Models.ReaderModel ShareBooks.Business.ReaderBusiness::Insert(ShareBooks.Domain.Models.ReaderModel)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="47" ordinal="3" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="49" ordinal="4" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="50" ordinal="5" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="47" ordinal="3" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="49" ordinal="4" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="50" ordinal="5" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="43" ec="1" el="50" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="43" ec="1" el="50" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Collections.Generic.List`1&lt;ShareBooks.Domain.Models.ReaderModel&gt; ShareBooks.Business.ReaderBusiness::ListAll()</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="57" ordinal="0" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="58" ordinal="1" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="60" ordinal="2" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="61" ordinal="3" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="57" ordinal="0" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="58" ordinal="1" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="60" ordinal="2" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="61" ordinal="3" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="57" ec="1" el="61" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="57" ec="1" el="61" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>ShareBooks.Domain.Models.ReaderModel ShareBooks.Business.ReaderBusiness::Update(ShareBooks.Domain.Models.ReaderModel)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="69" ordinal="0" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="70" ordinal="1" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="71" ordinal="2" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="73" ordinal="3" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="75" ordinal="4" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="76" ordinal="5" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="69" ordinal="0" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="70" ordinal="1" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="71" ordinal="2" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="73" ordinal="3" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="75" ordinal="4" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="76" ordinal="5" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="69" ec="1" el="76" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="69" ec="1" el="76" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void ShareBooks.Business.ReaderBusiness::.ctor(ShareBooks.Repository.Interfaces.IRepository`1&lt;ShareBooks.Domain.Entities.ReaderEntity&gt;,AutoMapper.IMapper)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="24" ordinal="4" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4" uspid="24" ordinal="4" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="20" ec="1" el="24" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="20" ec="1" el="24" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
       </Classes>
     </Module>
-    <Module hash="9C8624C2-E636-4A5A-AB81-CD87A5E99E44">
+    <Module hash="B4861A5B-40AF-4BC6-BC23-58BAF8196A82">
       <ModulePath>ShareBooks.Domain.dll</ModulePath>
-      <ModuleTime>2019-08-19T09:28:54</ModuleTime>
+      <ModuleTime>2019-08-19T10:03:29</ModuleTime>
       <ModuleName>ShareBooks.Domain</ModuleName>
       <Files>
         <File uid="7" fullPath="C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Domain\Models\BookModel.cs" />
@@ -648,7 +648,7 @@
               <Name>System.String ShareBooks.Domain.Models.ReaderModel::get_Name()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
@@ -659,7 +659,7 @@
               <Name>System.String ShareBooks.Domain.Models.ReaderModel::get_IdentityDocument()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
@@ -670,7 +670,7 @@
               <Name>System.String ShareBooks.Domain.Models.ReaderModel::get_Email()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
@@ -687,7 +687,7 @@
               <Name>System.Guid ShareBooks.Domain.Models.Abstract.Model::get_KeyId()</Name>
               <FileRef uid="9" />
               <SequencePoints>
-                <SequencePoint vc="5" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="10" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="9" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
@@ -778,41 +778,41 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
           <FullName>ShareBooks.Domain.Entities.ReaderEntity</FullName>
           <Methods>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String ShareBooks.Domain.Entities.ReaderEntity::get_Name()</Name>
               <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String ShareBooks.Domain.Entities.ReaderEntity::get_IdentityDocument()</Name>
               <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.String ShareBooks.Domain.Entities.ReaderEntity::get_Email()</Name>
               <FileRef uid="11" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="11" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
@@ -826,7 +826,7 @@
               <Name>System.Int32 ShareBooks.Domain.Entities.Abstract.Entity::get_Id()</Name>
               <FileRef uid="12" />
               <SequencePoints>
-                <SequencePoint vc="2" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="4" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="12" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
@@ -837,7 +837,7 @@
               <Name>System.Guid ShareBooks.Domain.Entities.Abstract.Entity::get_KeyId()</Name>
               <FileRef uid="12" />
               <SequencePoints>
-                <SequencePoint vc="7" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="14" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="12" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
@@ -846,9 +846,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="B501DC60-8420-420C-AACA-5E94692EED98">
+    <Module hash="F71568B8-2A42-4FAC-AD00-51EF72DA07F7">
       <ModulePath>ShareBooks.Repository.dll</ModulePath>
-      <ModuleTime>2019-08-19T09:28:54</ModuleTime>
+      <ModuleTime>2019-08-19T10:03:29</ModuleTime>
       <ModuleName>ShareBooks.Repository</ModuleName>
       <Files>
         <File uid="13" fullPath="C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Repository\BookRepository.cs" />
@@ -1079,9 +1079,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="941E79DE-5BEA-43EE-9D7E-D7253D1BEFD0">
+    <Module hash="67B590E9-8F31-4A9B-BE63-2B786FA2ECEF">
       <ModulePath>ShareBooks.Services.dll</ModulePath>
-      <ModuleTime>2019-08-19T09:28:54</ModuleTime>
+      <ModuleTime>2019-08-19T10:03:29</ModuleTime>
       <ModuleName>ShareBooks.Services</ModuleName>
       <Files>
         <File uid="17" fullPath="C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Services\BookServices.cs" />

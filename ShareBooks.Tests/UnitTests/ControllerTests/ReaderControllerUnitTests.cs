@@ -178,5 +178,58 @@ namespace ShareBooks.Tests.UnitTests.ControllerTests
 
             result.Should( ).BeOfType<StatusCodeResult>( ).Equals( 500 );
         }
+
+        [Fact( DisplayName = "Update Reader" )]
+        public void UpdateReader( )
+        {
+            ReaderModel readerModel = new ReaderModel( )
+            {
+                Name = "Lucas Felipe Martins",
+                IdentityDocument = "12345678901",
+                Email = "luucasmartins@hotmail.com",
+            };
+
+            Mock<IReaderServices> mockReaderServices = new Mock<IReaderServices>( );
+            Mock<ILogger<ReaderController>> mockLogger = new Mock<ILogger<ReaderController>>( );
+
+            mockReaderServices
+                .Setup( ( a ) => a.Update( It.IsAny<ReaderModel>( ) ) )
+                .Returns( readerModel );
+
+            ReaderController readerController = new ReaderController( mockReaderServices.Object, mockLogger.Object );
+
+            var result = readerController.Put( It.IsAny<ReaderModel>( ) ).Result;
+
+            result.Should( ).BeOfType<OkResult>( );
+        }
+
+        [Fact( DisplayName = "Try update reader" )]
+        public void TryUpdateReader( )
+        {
+            Mock<IReaderServices> mockReaderServices = new Mock<IReaderServices>( );
+            Mock<ILogger<ReaderController>> mockLogger = new Mock<ILogger<ReaderController>>( );
+
+            mockReaderServices
+                .Setup( ( a ) => a.Update( It.IsAny<ReaderModel>( ) ) )
+                .Returns( It.IsAny<ReaderModel>( ) );
+
+            ReaderController readerController = new ReaderController( mockReaderServices.Object, mockLogger.Object );
+
+            var result = readerController.Put( It.IsAny<ReaderModel>( ) ).Result;
+
+            result.Should( ).BeOfType<StatusCodeResult>( ).Equals( 500 );
+        }
+
+        [Fact(DisplayName = "Try update reader exception")]
+        public void TryUpdateReaderException( )
+        {
+            Mock<ILogger<ReaderController>> mockLogger = new Mock<ILogger<ReaderController>>( );
+
+            ReaderController readerController = new ReaderController( It.IsAny<IReaderServices>( ), mockLogger.Object );
+
+            var result = readerController.Put( It.IsAny<ReaderModel>( ) ).Result;
+
+            result.Should( ).BeOfType<StatusCodeResult>( ).Equals( 500 );
+        }
     }
 }
