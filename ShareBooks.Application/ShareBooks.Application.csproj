@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>D:\Transdata\GitHub\ShareBooks\ShareBooks.Application\ShareBooks.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
