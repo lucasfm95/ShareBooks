@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.2\ShareBooks.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>bin\Release\netcoreapp2.2\ShareBooks.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
