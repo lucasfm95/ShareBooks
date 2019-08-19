@@ -122,8 +122,8 @@ namespace ShareBooks.Tests.UnitTests.ControllerTests
             result.Should( ).BeOfType<NoContentResult>( );
         }
 
-        [Fact( DisplayName = "Get book by keyId exception" )]
-        public void GetByKeyIdException( )
+        [Fact( DisplayName = "Try get book by keyId exception" )]
+        public void TryGetByKeyIdException( )
         {
             Mock<ILogger<BookController>> mockLogger = new Mock<ILogger<BookController>>( );
 

@@ -6,7 +6,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Application\ShareBooks.Application.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.2\ShareBooks.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\ShareBooks.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,10 +18,6 @@
     <Content Remove="log\**" />
     <EmbeddedResource Remove="log\**" />
     <None Remove="log\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="ShareBooks.Application.xml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +35,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShareBooks.Services\ShareBooks.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ShareBooks.Application.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
