@@ -14,9 +14,9 @@ Domain
 	Reader
 		ID
 		Guid
-		Nome
-		CPF
-		Data Nascimento
+		Name
+		identity document
+		Email
 		
 	emprestimo
 		ID
