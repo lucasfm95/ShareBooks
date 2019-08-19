@@ -9,6 +9,10 @@
     <DocumentationFile>C:\Users\Luuca\Documents\Projetos\github\ShareBooks\ShareBooks.Application\ShareBooks.Application.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Transdata\GitHub\ShareBooks\ShareBooks.Application\ShareBooks.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="log\**" />
     <Content Remove="log\**" />
