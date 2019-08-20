@@ -1,16 +1,13 @@
-﻿using ShareBooks.Domain.Entities.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace ShareBooks.Domain.Entities
+namespace ShareBooks.Domain.Models
 {
-    [Table( "BookLoan" )]
-    public sealed class BookLoanEntity : Entity
+    public class BookLoanModel
     {
-        public int BookId { get; set; }
-        public int ReaderId { get; set; }
+        public Guid BookKeyId { get; set; }
+        public Guid ReaderKeyId { get; set; }
         public DateTime BookLoanDate { get; set; }
         public string BookLoanFeedback { get; set; }
         public DateTime ExpectedReturnDate { get; set; }

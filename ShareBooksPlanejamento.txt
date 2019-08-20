@@ -15,15 +15,16 @@ Domain
 		ID
 		Guid
 		Name
-		identity document
+		Identity Document
 		Email
 		
-	emprestimo
+	Book Loan
 		ID
-		guid
+		Guid
 		Id Livro
-		qualidade e/ou estado lirvo
+		Id leitor
 		data do emprestimo
+		feedbacks emprestimo
 		data prevista de devolução
 		data de devolução
 		feedbacks devolução
