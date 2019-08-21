@@ -1,10 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Dapper;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using ShareBooks.Domain.Entities;
 using ShareBooks.Repository.Abstract;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace ShareBooks.Repository
 {
@@ -16,7 +16,12 @@ namespace ShareBooks.Repository
 
         public override BookLoanEntity FindByKeyId( Guid keyId )
         {
-            throw new NotImplementedException( );
+            string sqlQuery = "select id, keyid, bookid, readerid, bookloandate, bookloanfeedback, expectedreturndate, returndate, returnfeedback from bookloan where keyid = @KeyId";
+
+            DynamicParameters parameters = new DynamicParameters( );
+            parameters.Add( "@KeyId", keyId );
+
+            return base.ExecuteQuery( sqlQuery, parameters ).FirstOrDefault( );
         }
     }
 }

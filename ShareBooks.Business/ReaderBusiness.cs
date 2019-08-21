@@ -74,5 +74,25 @@ namespace ShareBooks.Business
 
             return _mapper.Map<ReaderModel>( readerEntity );
         }
+
+        /// <summary>
+        /// Busca id do leitor de acordo com a keyId
+        /// </summary>
+        /// <param name="keyId">KeyId do leitor</param>
+        /// <returns>Id do leitor</returns>
+        public int GetIdBookByKeyId( Guid keyId )
+        {
+            return _repository.FindByKeyId( keyId ).Id;
+        }
+
+        /// <summary>
+        /// Busca leitor pelo id
+        /// </summary>
+        /// <param name="id">Id leitor</param>
+        /// <returns>Entidade leitor</returns>
+        public ReaderEntity GetReaderById( int id )
+        {
+            return _repository.FindById( id );
+        }
     }
 }

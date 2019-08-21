@@ -72,5 +72,25 @@ namespace ShareBooks.Business
 
             return _mapper.Map<BookModel>( bookEntity );
         }
+
+        /// <summary>
+        /// Busca id do livro de acordo com a keyId
+        /// </summary>
+        /// <param name="keyId">KeyId do livro</param>
+        /// <returns>Id do livro</returns>
+        public int GetIdBookByKeyId( Guid keyId )
+        {
+            return _repository.FindByKeyId( keyId ).Id;
+        }
+
+        /// <summary>
+        /// Busca livro pelo id
+        /// </summary>
+        /// <param name="id">Id livro</param>
+        /// <returns>Entidade livro</returns>
+        public BookEntity GetBookById( int id )
+        {
+            return _repository.FindById( id );
+        }
     }
 }

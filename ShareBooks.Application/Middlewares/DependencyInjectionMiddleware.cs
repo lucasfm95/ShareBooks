@@ -32,6 +32,7 @@ namespace ShareBooks.Application.Middlewares
 
             services.AddSingleton<IRepository<BookEntity>, BookRepository>( );
             services.AddSingleton<IRepository<ReaderEntity>, ReaderRepository>( );
+            services.AddSingleton<IRepository<BookLoanEntity>, BookLoanRepository>( );
 
             #endregion
 
@@ -39,6 +40,7 @@ namespace ShareBooks.Application.Middlewares
 
             services.AddTransient<IBookBusiness, BookBusiness>( );
             services.AddTransient<IReaderBusiness, ReaderBusiness>( );
+            services.AddTransient<IBookLoanBusiness, BookLoanBusiness>( );
 
             #endregion
 
@@ -46,6 +48,7 @@ namespace ShareBooks.Application.Middlewares
 
             services.AddTransient<IBookServices, BookServices>( );
             services.AddTransient<IReaderServices, ReaderServices>( );
+            services.AddTransient<IBookLoanServices, BookLoanServices>( );
 
             #endregion
         }

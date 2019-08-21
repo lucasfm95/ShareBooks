@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShareBooks.Business.Interfaces
+namespace ShareBooks.Services.Interfaces
 {
-    public interface IBookLoanBusiness
+    public interface IBookLoanServices
     {
-        List<BookLoanModel> ListAll( );
+        List<BookLoanModel> GetAll( );
         BookLoanModel GetByKeyId( Guid keyId );
         BookLoanModel Insert( BookLoanModel bookLoanModel );
         BookLoanModel Update( BookLoanModel bookLoanModel );

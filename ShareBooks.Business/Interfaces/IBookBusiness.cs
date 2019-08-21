@@ -1,4 +1,5 @@
-﻿using ShareBooks.Domain.Models;
+﻿using ShareBooks.Domain.Entities;
+using ShareBooks.Domain.Models;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +9,10 @@ namespace ShareBooks.Business.Interfaces
     {
         List<BookModel> ListAll( );
         BookModel GetByKeyId( Guid keyId );
+        int GetIdBookByKeyId( Guid keyId );
+        BookEntity GetBookById( int id);
         BookModel Insert( BookModel book );
         BookModel Update( BookModel book );
+
     }
 }

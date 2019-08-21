@@ -14,7 +14,7 @@ namespace ShareBooks.Domain.Entities
         public DateTime BookLoanDate { get; set; }
         public string BookLoanFeedback { get; set; }
         public DateTime ExpectedReturnDate { get; set; }
-        public DateTime ReturnDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
         public string ReturnFeedback { get; set; }
     }
 }
