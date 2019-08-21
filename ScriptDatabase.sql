@@ -27,3 +27,19 @@ create table Reader(
 go
 -- create index table book
 create index Index_KeyId ON Reader (KeyId);
+go
+
+create table BookLoan(
+	Id int identity(1,1) not null primary key,
+	KeyId uniqueidentifier not null unique,
+	BookId int foreign key references Book(Id) null, 
+	ReaderId int foreign key references Reader(Id) null, 
+	BookLoanDate date null,
+	BookLoanFeedback varchar(200) null,
+	ExpectedReturnDate date null,
+	ReturnDate date null,
+	ReturnFeedback varchar(200) null
+)
+go
+
+create index Index_KeyId ON BookLoan (KeyId);

@@ -14,6 +14,7 @@ namespace ShareBooks.Application.AutoMapper.Profiles
         {
             CreateMap<BookEntity, BookModel>( );
             CreateMap<ReaderEntity, ReaderModel>( );
+            CreateMap<BookLoanEntity, BookLoanModel>( );
         }
     }
 }
