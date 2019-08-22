@@ -26,7 +26,7 @@ namespace ShareBooks.Application
 
             // Adiciona os middlewares
             services.AddDependencyInjection( );
-            services.AddLoggerMiddleware( );
+            services.AddLoggerMiddleware( Configuration );
             services.AddSwaggerMiddleware( );
         }
 
