@@ -34,6 +34,7 @@ Para fazer um empréstimo, é necessário ter o livro e o leitor cadastrado.
 
 ### Tecnologias utilizadas:
 
+* ASPNET Core 2.2;
 * Swagger - para documentação da API;
 * Serialog - para gravação de log em arquivo, somente erros;
 * Auto Mapper - para fazer o mapeamento dos modelos para entidades;
