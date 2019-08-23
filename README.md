@@ -7,6 +7,10 @@ API para empréstimos de livros.
 Projeto em ASPNET Core Web API 2.2 de controle de empréstimos de livros, controlando o livro que foi emprestado para o leitor.
 Projeto rodando no Azure, na url: https://sharebooks.azurewebsites.net/docs/index.html
 
+Sistema separado em cadadas : API, services, business, repository e domain.
+
+Toda regra de negócio está na camada business. 
+
 ### Funcionalidades do sistema:
 
 * O sistema permiti consultar, inserir e alterar um livro. 
@@ -14,11 +18,18 @@ Projeto rodando no Azure, na url: https://sharebooks.azurewebsites.net/docs/inde
 * O sistema permiti consultar, inserir e alterar um empréstimo de livro;
 
 ### Instalação:
+
 É necessário ter um banco de dados sql server e rodar o script sql ScriptDataBase.sql (encontra-se na raiz do projeto) para criação das tabelas no banco de dados.
 
 Necessário também ter runtime do ASPNET Core.
 
+### Tests:
+
+Uso do coverlet para teste de cobertura. Para executar, execute o pelo bash o arquivo cover-test.sh e ao finalizar, basta acessar os relatórios criados na pasta ShareBooks.Tests\coverage_reports o arquivo index.html. 
+
 ### Exemplo de uso:
+Para rodar a aplicação, é necessário informar os bancos de dados no arquivo de configuração, o ShareBooks.Application/appsettings.json (SQL Server para dados e MongoDB para o log).
+
 Para fazer um empréstimo, é necessário ter o livro e o leitor cadastrado.
 
 ### Tecnologias utilizadas:
